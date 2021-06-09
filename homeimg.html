@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+
+	#homeimg {
+	  display: block;
+	  width: 1200px;
+	  height: 700px;
+	  overflow: hidden;
+	  margin: 0 auto;
+	  position: relative;
+	  background-image: url("./img/page1.jpg");
+	}
+	#homeimg img {
+	  position: absolute;
+	  top: 0;
+	  left: 0;
+	  width: 1200px;
+	  height: 700px;
+	  
+	}
+	
+	#homeimg img:not(:target), #homeimg img:target ~ img#home3 {
+	  position: relative;
+	  opacity: 0;
+	}
+	
+	#homeimg ul {
+	  position: absolute;
+	  top: 10px;
+	  left: 10px;
+	  list-style: none;
+	  margin-bottom:10px;
+
+	}
+	#homeimg ul li {
+	  width: 30px;
+	  height: 30px;
+	  font-family: "나눔고딕";
+	  font-size: 25px;
+	  border-radius: 50%;
+	  background: #ffa7a7;
+	  text-align: center;
+	  display: inline-block;
+	  margin-bottom: 10px;
+	}
+	#homeimg ul li:hover {
+	  background: skyblue;
+	}
+	#homeimg ul li a {
+	  text-decoration: none;
+	  color: black;
+	}
+
+	body {
+	  padding: 0;
+	  margin: 0;
+	  overflow-y: hidden;
+	}
+	</style>
+</head>
+<body>
+
+<div id="homeimg">
+
+  <img id="home1" src="./img/page1.jpg" width="1200" height="700">
+  <img id="home2" src="./img/page2.jpg" width="1200" height="700">
+  <img id="home3" src="./img/page3.jpg" width="1200" height="700">
+  
+  <ul>
+    <li><a href="#home1">1</a></li>
+    <li><a href="#home2">2</a></li>
+    <li><a href="#home3">3</a></li>
+    
+  </ul>
+</div>
+</body>
+</html>
