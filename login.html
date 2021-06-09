@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login</title>
+<style type="text/css">
+
+	*{
+		padding: 0;
+		margin: 0;
+	}
+
+	body{
+		margin: 0 auto;
+		width: 1200px;
+	}
+	
+	fieldset{
+		width: 500px;
+		height: 300px;
+		background-color: #fff3c3;
+		border-radius: 20px;
+		box-shadow: 3px 3px 3px gray;
+		position: relative;
+		left: 330px;
+		margin-top: 100px;
+		border: 0px;
+	}
+	legend{
+		font-weight: bold;
+		font-size: 20px;
+		text-align: center;
+
+	}
+	ul{
+		list-style-type: none;
+		margin-left: 50px;
+		margin-top: 40px;
+		/*background-color: blue;*/
+	}
+
+	ul li{
+		padding: 0px;
+	}
+
+	button{
+	width: 100px;
+    height: 100px;
+    border-radius: 3px;
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+    background-color: #ffab3e;
+    position: relative;
+    left: 200px;
+    top:-140px;
+	}
+	#aa{
+		/*background-color: red;*/
+		position: relative;
+		top:-100px
+	}
+
+	.col1{
+		font-weight: bold;
+	}
+	button:hover{
+		background-color: gray;
+	}
+	#hov,#hov2:link{
+		text-decoration: none;
+		color: black;
+	}
+	#hov2:visited{
+		color: black;
+	}
+	#hov2:hover{
+		color: #ff5e5e;
+		font-weight: bold;
+	}
+</style>
+</head>
+<body>
+
+<form>
+	<fieldset>
+		<legend>로그인 정보를 입력하세요</legend>
+	<ul id="mem_form">
+		<li>
+			<ul class="cols">
+				<li class="col1" >ID : </li>
+				<li class="col2"><input type="text"></li>
+			</ul>
+		</li>
+		<li>
+			<ul class="cols">
+				<li class="col1">Password</li>
+				<li class="col2"><input type="password"></li>
+			</ul>
+		</li>
+		<li>
+			<ul class="cols">
+				<button type="submit" class="btn_login"  disabled><a href="" id="hov">Login</a></button>
+				<li class="col1" id="aa"> <a href="" id="hov2"> 아이디 /비밀번호 찾기 </a> </li>
+			</ul>
+		</li>
+	</ul>
+	</fieldset>
+</form>
+</body>
+</html>
