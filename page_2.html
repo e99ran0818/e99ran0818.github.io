@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		*{
+			margin:0;
+			padding: 0;
+		}
+		body{
+			margin: 0 auto;
+			width: 1200px;
+		}
+		#title{
+			text-align: center;
+			font-family: "나눔명조";
+			font-weight: bold;
+			font-size:30px;
+			margin-top:80px;
+			/*animation-name:mation;
+			animation-duration:2s;
+			animation-iteration-count: 1;*/
+		}
+		.bb{
+		}
+		ul{
+			text-align: center;
+		}
+		li{
+			list-style-type: none;
+			text-align: center;
+		}
+		.drop{
+			width: 250px;
+			display:inline-block;
+			position: relative;
+		}
+		.dropdowncon{
+			display: none;
+			position: absolute;
+
+		}
+		.drop:hover .dropdowncon{
+			display: block;
+			font-family: "나눔고딕";
+			font-size: 18px;
+			padding-top: 20px;
+		}
+
+		#all{
+			position: relative;
+			left: 210px;
+			
+			margin-top: 60px;
+		}
+		
+		@keyframes mation{
+			0%{
+				color:white;
+			}
+			100%{
+				color:black;
+			}
+		}
+
+		.bb{
+			font-weight: bold;
+			font-family: "나눔명조";
+		}
+
+		#bottom{
+			text-align: center;
+			margin-top: 140px;
+		}
+		
+	</style>
+</head>
+<body>
+<div id = "title">저의 꿈을 소개합니다 !</div>
+<div id="all">
+<div class="drop">
+	<ul class="aa">
+		<p class="bb">첫번째 꿈</p>
+		<br>
+		<img src = "./img/아이패드드로잉.jpg" width="200px" height="200px">
+		<div class="dropdowncon">
+			<li>내가 직접 만든 캐릭터를 이용해 캐릭터 굿즈제작 및 판매하기!</li>
+		</div>
+	</ul>
+</div>
+<div class="drop">
+	<ul>
+		<p class="bb">두번재 꿈</p>
+		<br>
+		<img src = "./img/개발자.jpg" width="200px" height="200px">
+		<div class="dropdowncon">
+			
+			<li>열심히 공부해서 학교 졸업 후에 원하는 곳으로 취업성공하기 !</li>
+		</div>
+	</ul>
+</div>
+<div class="drop">
+	<ul>
+		<p class="bb">세번째 꿈</p>
+		<br>
+		<img src = "./img/카페.jpg" width="200px" height="200px">
+		<div class="dropdowncon">
+			
+			<li>직장생활 하며 열심히 번 돈으로 내 이름을 건 카페 창업하기!</li>
+		</div>
+	</ul>
+</div>
+</div>
+
+<div id="bottom">▲ 사진 위에 마우스를 올려보세요 ▲</div>
+</body>
+</html>
